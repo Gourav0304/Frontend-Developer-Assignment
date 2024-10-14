@@ -1,0 +1,132 @@
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.calendar-day-names {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin-bottom: 8px;
+}
+
+.day-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 40px; 
+  color: #333;
+}
+
+.weekday-date-range-picker {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.controls span {
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+.controls button {
+  height: 30px;
+  width: 30px;
+  background: #007bff;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #0056b3;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 8px;
+}
+
+.day,
+.empty-day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.empty-day {
+  visibility: hidden;
+}
+
+.weekday {
+  background-color: #e9f5ff;
+  border: 1px solid #b3e0ff;
+}
+
+.weekday:hover {
+  background-color: #cceeff;
+}
+
+.weekend {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  cursor: not-allowed;
+}
+
+
+.selected {
+  background-color: #007bff;
+  color: white;
+  border: 1px solid #0056b3;
+}
+
+.in-range {
+  background-color: #cce5ff;
+  border: 1px solid #99ccff;
+}
+
+.predefined-ranges {
+  display: flex;
+  flex-direction: row;
+  margin-top: 16px;
+}
+
+.predefined-ranges button {
+  background: #28a745;
+  border: none;
+  color: white;
+  padding: 6px;
+  border-radius: 4px;
+  margin: 0 5px;
+  width: 50%;
+  font-size: large;
+  cursor: pointer;
+}
+
+.predefined-ranges button:hover {
+  background: #218838;
+}
